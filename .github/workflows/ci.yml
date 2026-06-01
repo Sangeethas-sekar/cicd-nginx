@@ -13,6 +13,6 @@ jobs:
     - name: jen job
       run: |
        curl -X POST \
-       "http://3.109.181.54:8080/job/nginx.job/build \
-        --user admin:${{secrets.JENKINS_TOKEN}}
+        http://3.109.181.54:8080/job/nginx.job/build \
+         --user admin:${{ secrets.JENKINS_TOKEN }}
 
